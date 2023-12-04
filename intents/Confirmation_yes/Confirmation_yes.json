@@ -1,6 +1,10 @@
 {
   "name": "acc73a49-71f7-4760-9ade-55fc7e1a035e",
   "displayName": "Confirmation_yes",
+  "parameters": [ {
+    "id": "person",
+    "entityType": "@sys.person"
+  } ],
   "priority": 500000,
-  "numTrainingPhrases": 6
+  "numTrainingPhrases": 8
 }

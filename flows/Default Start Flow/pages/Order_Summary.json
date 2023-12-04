@@ -12,16 +12,12 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Thank you for placing your pizza order! Your order has been successfully placed. Checkout your order details once: $request.generative.conversation\n\nYou will receive your pizza order within 30 minutes. Thank you for choosing us!" ]
+          "text": [ "Thank you for confirming your order! Would you like to add any cold drinks to your purchase?" ]
         },
         "languageCode": "en"
-      } ],
-      "generators": [ {
-        "generator": "projects/support-bpdb/locations/us-central1/agents/31bd193d-d7cc-4bee-8933-e61ce09d2565/generators/22ed74af-ac96-4363-a003-0df4433f8fe5",
-        "outputParameter": "$request.generative.conversation"
       } ]
     },
-    "targetPage": "End Flow",
+    "targetPage": "Coldrinks",
     "name": "21cce9da-0485-41b4-a5f1-39fa7ccc2601"
   }, {
     "intent": "Confirmation_yes",

@@ -1,0 +1,40 @@
+{
+  "name": "f33935c5-e4a0-4c9d-b4c3-ffb678bd84de",
+  "displayName": "Coldrinks",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "Confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for placing your pizza order! Your Pizza order with Coldrinks successfully placed. Checkout your order details once: $request.generative.conversation\n\nYou will receive your pizza order within 30 minutes. Thank you for choosing us!\n" ]
+        },
+        "languageCode": "en"
+      } ],
+      "generators": [ {
+        "generator": "projects/support-bpdb/locations/us-central1/agents/31bd193d-d7cc-4bee-8933-e61ce09d2565/generators/22ed74af-ac96-4363-a003-0df4433f8fe5",
+        "outputParameter": "$request.generative.conversation"
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "89048ca8-a828-4d12-aee3-26df9f7af611"
+  }, {
+    "intent": "Confirmation_No",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "We also offered a refreshing cold drink with your pizza order, but if you prefer not to include it, no worries! Your delicious pizza with $request.generative.conversation. will be on its way within 30 minutes. \n\nThank you for choosing us!" ]
+        },
+        "languageCode": "en"
+      } ],
+      "generators": [ {
+        "generator": "projects/support-bpdb/locations/us-central1/agents/31bd193d-d7cc-4bee-8933-e61ce09d2565/generators/22ed74af-ac96-4363-a003-0df4433f8fe5",
+        "outputParameter": "$request.generative.conversation"
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "276a6c19-e2ad-4dce-9ea1-ee2b05c12598"
+  } ]
+}
