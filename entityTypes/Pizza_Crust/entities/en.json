@@ -1,0 +1,27 @@
+{
+  "entities": [ {
+    "value": "Thin",
+    "synonyms": [ "Thin", "thin" ],
+    "languageCode": "en"
+  }, {
+    "value": "Cheese",
+    "synonyms": [ "Cheese", "cheese" ],
+    "languageCode": "en"
+  }, {
+    "value": "Thick",
+    "synonyms": [ "Thick" ],
+    "languageCode": "en"
+  }, {
+    "value": "Hand Tossed",
+    "synonyms": [ "Hand Tossed" ],
+    "languageCode": "en"
+  }, {
+    "value": "Stuffed",
+    "synonyms": [ "Stuffed" ],
+    "languageCode": "en"
+  }, {
+    "value": "Gluten-free ",
+    "synonyms": [ "Gluten-free " ],
+    "languageCode": "en"
+  } ]
+}

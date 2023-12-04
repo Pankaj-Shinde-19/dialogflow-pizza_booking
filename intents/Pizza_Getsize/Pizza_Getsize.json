@@ -1,0 +1,10 @@
+{
+  "name": "18ccc055-e521-411e-86ac-8b5c60032df3",
+  "displayName": "Pizza_Getsize",
+  "parameters": [ {
+    "id": "pizza_size",
+    "entityType": "@Pizza_Size"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 4
+}

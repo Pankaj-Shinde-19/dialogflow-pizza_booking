@@ -1,0 +1,22 @@
+{
+  "name": "1263f147-111a-4e08-8aee-f53f95a77c9e",
+  "displayName": "Confirmation_Page",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "Confirmation_yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Order_Pizza",
+    "name": "6b9fafc7-739f-476b-9e48-1e5eb829ff74"
+  }, {
+    "intent": "Confirmation_No",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Final_Confirmation_Yes/No",
+    "name": "e2ea2f99-895e-418b-8e68-c9ad4884ff46"
+  } ]
+}

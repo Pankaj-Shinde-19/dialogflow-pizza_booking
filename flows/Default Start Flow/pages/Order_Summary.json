@@ -1,0 +1,39 @@
+{
+  "name": "95593a12-b0bb-40cf-954e-7a2eb5ef79bd",
+  "displayName": "Order_Summary",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "No, I Do not have Questions.",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for placing your pizza order! Your order has been successfully placed. Checkout your order details once: $request.generative.conversation\n\nYou will receive your pizza order within 30 minutes. Thank you for choosing us!" ]
+        },
+        "languageCode": "en"
+      } ],
+      "generators": [ {
+        "generator": "projects/support-bpdb/locations/us-central1/agents/31bd193d-d7cc-4bee-8933-e61ce09d2565/generators/22ed74af-ac96-4363-a003-0df4433f8fe5",
+        "outputParameter": "$request.generative.conversation"
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "21cce9da-0485-41b4-a5f1-39fa7ccc2601"
+  }, {
+    "intent": "Confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please provide the changes you would like to make to your order." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Order_Pizza",
+    "name": "881027bc-0ee1-4b15-bb46-f0098ef80c3e"
+  } ]
+}

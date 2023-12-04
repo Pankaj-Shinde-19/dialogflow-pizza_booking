@@ -1,0 +1,10 @@
+{
+  "fallbackSettings": {
+    "selectedPrompt": "Not_Match_Intent_for_Pizza",
+    "promptTemplates": [ {
+      "displayName": "Not_Match_Intent_for_Pizza",
+      "promptText": "The user's query is using keywords that are not associated with any specific pizza order.\n\"I'm having a 'dough' time understanding your pizza order. Can you help me 'dough' it out?\"\n\"I'm a bit 'sauced' by your pizza request. Can you 'crust' me in on the details?\"\n\"I'm 'cheese'd' to say I'm lost in the pizza woods. Can you 'pepper' me with some more information?\""
+    } ]
+  },
+  "languageCode": "en"
+}

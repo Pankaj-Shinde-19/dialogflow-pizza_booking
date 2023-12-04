@@ -1,0 +1,41 @@
+{
+  "name": "cfe65113-15b2-451d-b9b7-b471258e4f7a",
+  "displayName": "Final_Confirmation_Yes/No",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Are you sure you want to cancel your order? in order to cancel order type \"No\" and if want to order pizza type \"Yes\" to continue." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Final_Confirmation_No",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for visiting! Your order has been canceled. We hope to serve you again in the future. Feel free to reach out if you have any further inquiries or need assistance. Have a great day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "74e65962-0158-47d4-8a30-65c3c0176a8c"
+  }, {
+    "intent": "Final_Confirmation_No",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Cancellation_Done",
+    "name": "e4b11a01-b6b2-4cb4-afca-b3e2e0a24786"
+  }, {
+    "intent": "Final_Confirmation_Yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Order_Pizza",
+    "name": "82178139-d132-4d5f-b2a6-e57127965ade"
+  } ]
+}

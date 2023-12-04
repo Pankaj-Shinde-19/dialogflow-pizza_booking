@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "Small",
+    "synonyms": [ "Small" ],
+    "languageCode": "en"
+  }, {
+    "value": "Medium",
+    "synonyms": [ "Medium" ],
+    "languageCode": "en"
+  }, {
+    "value": "Large",
+    "synonyms": [ "Large" ],
+    "languageCode": "en"
+  }, {
+    "value": "Extra Large",
+    "synonyms": [ "Extra Large" ],
+    "languageCode": "en"
+  } ]
+}

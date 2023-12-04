@@ -1,0 +1,62 @@
+{
+  "name": "c692b80a-190d-4ffc-b160-173c0e51c6c2",
+  "displayName": "Testcase to showcase Generative Fallback",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Good day! What can I do for you today?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "i want to order misal"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "\"I'm having a 'dough' time understanding your pizza order. Can you help me 'dough' it out?\"\n\nThe user's query is using keywords that are not associated with any specific pizza order. This could be because they are not familiar with pizza ordering, or they are trying to be funny. The agent should try to be helpful and understanding, while also being clear and concise." ],
+        "containAiGeneratedContent": true,
+        "containGenerativeFallback": true
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1701339186,
+    "nanos": 698880000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "entities": [ {
+    "value": "Pepperoni",
+    "synonyms": [ "Pepperoni" ],
+    "languageCode": "en"
+  }, {
+    "value": "Mushrooms",
+    "synonyms": [ "Mushrooms" ],
+    "languageCode": "en"
+  }, {
+    "value": "Onions",
+    "synonyms": [ "Onions" ],
+    "languageCode": "en"
+  }, {
+    "value": "Olives",
+    "synonyms": [ "Olives" ],
+    "languageCode": "en"
+  }, {
+    "value": "Sausage",
+    "synonyms": [ "Sausage" ],
+    "languageCode": "en"
+  }, {
+    "value": "Pineapple",
+    "synonyms": [ "Pineapple" ],
+    "languageCode": "en"
+  }, {
+    "value": "Extra Cheese",
+    "synonyms": [ "Extra Cheese" ],
+    "languageCode": "en"
+  }, {
+    "value": "Green Peppers",
+    "synonyms": [ "Green Peppers" ],
+    "languageCode": "en"
+  } ]
+}

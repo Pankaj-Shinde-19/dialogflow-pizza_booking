@@ -1,0 +1,98 @@
+{
+  "name": "7b0bbcb4-b26a-4d97-ad3c-0d79b459b20b",
+  "displayName": "Order_Pizza",
+  "form": {
+    "parameters": [ {
+      "displayName": "pizza_type",
+      "required": true,
+      "entityType": "@Pizza_type",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ " Is there a specific type of pizza you have in mind? (e.g., Margherita, Pepperoni, Veggie, Hawaiian, BBQ Chicken)" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "pizza_size",
+      "required": true,
+      "entityType": "@Pizza_Size",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What size would you like for your pizza? Options include Small, Medium, Large, or Extra Large." ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "pizza_crust",
+      "required": true,
+      "entityType": "@Pizza_Crust",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What crust type would you prefer for your pizza? Options include Thin, Thick, Stuffed, or Gluten-free." ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "pizza_toppings",
+      "required": true,
+      "entityType": "@Pizza_Toppings",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Please select your preferred toppings for the pizza: Pepperoni, Mushrooms, Onions, Olives, Sausage, Pineapple, Extra Cheese, Green Peppers." ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "user_address",
+      "required": true,
+      "entityType": "@sys.address",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Kindly provide the delivery address for your pizza:" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Please provide the following details to place your pizza order:" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Is there anything specific you would like to inquire about your order, or you want to make changes in it?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Order_Summary",
+    "name": "97785e0a-4f9f-40d6-9bc2-54526692bbe3"
+  } ]
+}

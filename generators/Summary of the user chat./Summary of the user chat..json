@@ -1,0 +1,13 @@
+{
+  "name": "22ed74af-ac96-4363-a003-0df4433f8fe5",
+  "displayName": "Summary of the user chat.",
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "text-bison"
+  }
+}

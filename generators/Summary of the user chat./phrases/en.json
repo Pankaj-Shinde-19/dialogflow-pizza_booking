@@ -1,0 +1,6 @@
+{
+  "promptTexts": [ {
+    "text": "If user Said \"'No\" after the conversation you have to Summarize the conversation so far: $conversation.",
+    "languageCode": "en"
+  } ]
+}

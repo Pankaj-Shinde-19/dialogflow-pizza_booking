@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "Margherita",
+    "synonyms": [ "Margherita" ],
+    "languageCode": "en"
+  }, {
+    "value": "Pepperoni",
+    "synonyms": [ "Pepperoni" ],
+    "languageCode": "en"
+  }, {
+    "value": "Hawaiian",
+    "synonyms": [ "Hawaiian" ],
+    "languageCode": "en"
+  }, {
+    "value": "Veggie",
+    "synonyms": [ "vegetable", "Veggie" ],
+    "languageCode": "en"
+  }, {
+    "value": "BBQ Chicken",
+    "synonyms": [ "bbq", "BBQ ", "BBQ Chicken" ],
+    "languageCode": "en"
+  } ]
+}

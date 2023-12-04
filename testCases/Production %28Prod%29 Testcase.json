@@ -1,0 +1,227 @@
+{
+  "name": "9dc54cf9-cedc-49cc-aabf-674b8180caf4",
+  "displayName": "Production (Prod) Testcase",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Hi "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hello! How can I help you?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Can you help me to order pizza for me ?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Pizza_Start"
+      },
+      "currentPage": {
+        "name": "Confirmation_Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Welcome to PizzaBot. I'm here to assist you in ordering the perfect pizza. If you'd like to proceed with your order, please let me know !" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "yes, proceed."
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Confirmation_yes"
+      },
+      "currentPage": {
+        "name": "Order_Pizza",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Please provide the following details to place your pizza order:" ]
+      }, {
+        "text": [ " Is there a specific type of pizza you have in mind? (e.g., Margherita, Pepperoni, Veggie, Hawaiian, BBQ Chicken)" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I like BBQ Chicken pizza most"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Order_Pizza",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What size would you like for your pizza? Options include Small, Medium, Large, or Extra Large." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Extra Large"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Order_Pizza",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What crust type would you prefer for your pizza? Options include Thin, Thick, Stuffed, or Gluten-free." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Gluten-free crust will be good"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Order_Pizza",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Please select your preferred toppings for the pizza: Pepperoni, Mushrooms, Onions, Olives, Sausage, Pineapple, Extra Cheese, Green Peppers." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "In toppings i like Pepperoni"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Order_Pizza",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Kindly provide the delivery address for your pizza:" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Agivant Technologies, Baner road, Pune."
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Order_Summary",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Is there anything specific you would like to inquire about your order, or you want to make changes in it?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "No"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "No, I Do not have Questions."
+      },
+      "currentPage": {
+        "name": "End Session",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for placing your pizza order! Your order has been successfully placed. Checkout your order details once:  User wants to order BBQ Chicken pizza with gluten-free crust and pepperoni toppings. The pizza will be delivered to Agivant Technologies, Baner road, Pune.\n" ],
+        "containAiGeneratedContent": true,
+        "containGeneratorsContent": true
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1701338951,
+    "nanos": 943125000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  }
+}

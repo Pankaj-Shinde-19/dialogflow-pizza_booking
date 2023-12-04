@@ -1,0 +1,36 @@
+{
+  "name": "92b2e4c7-5b6c-4d0a-ac56-ff0ad6fb7fe4",
+  "displayName": "Cancellation_Done",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "$request.generative.conversation" ]
+      },
+      "languageCode": "en"
+    } ],
+    "generators": [ {
+      "generator": "projects/support-bpdb/locations/us-central1/agents/31bd193d-d7cc-4bee-8933-e61ce09d2565/generators/22ed74af-ac96-4363-a003-0df4433f8fe5",
+      "outputParameter": "$request.generative.conversation"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Final_Confirmation_No",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Your order has been cancelled: $request.generative.conversation" ]
+        },
+        "languageCode": "en"
+      } ],
+      "generators": [ {
+        "generator": "projects/support-bpdb/locations/us-central1/agents/31bd193d-d7cc-4bee-8933-e61ce09d2565/generators/22ed74af-ac96-4363-a003-0df4433f8fe5",
+        "outputParameter": "$request.generative.conversation"
+      } ]
+    },
+    "targetPage": "END_FLOW_WITH_CANCELLATION",
+    "name": "612fc0d3-6760-43ac-81f9-24ba2d08df8f"
+  } ]
+}

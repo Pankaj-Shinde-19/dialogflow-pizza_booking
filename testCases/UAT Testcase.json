@@ -1,0 +1,197 @@
+{
+  "name": "9c941123-b34d-4a2e-9a02-48f2e95589d7",
+  "displayName": "UAT Testcase",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Good day! What can I do for you today?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I want to order pizza."
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Pizza_Start"
+      },
+      "currentPage": {
+        "name": "Confirmation_Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Welcome to PizzaBot. I'm here to assist you in ordering the perfect pizza. If you'd like to proceed with your order, please let me know !" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Ye, proceed"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Confirmation_yes"
+      },
+      "currentPage": {
+        "name": "Order_Pizza",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Please provide the following details to place your pizza order:" ]
+      }, {
+        "text": [ " Is there a specific type of pizza you have in mind? (e.g., Margherita, Pepperoni, Veggie, Hawaiian, BBQ Chicken)" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": " I like Margherita pizza."
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Order_Pizza",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What size would you like for your pizza? Options include Small, Medium, Large, or Extra Large." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "One Medium size"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Order_Pizza",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What crust type would you prefer for your pizza? Options include Thin, Thick, Stuffed, or Gluten-free." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Thin crust "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Order_Pizza",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Please select your preferred toppings for the pizza: Pepperoni, Mushrooms, Onions, Olives, Sausage, Pineapple, Extra Cheese, Green Peppers." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I like Pepperoni."
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Order_Pizza",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Kindly provide the delivery address for your pizza:" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Agivant Technologies, Baner road, Pune."
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Order_Pizza",
+        "flow": "Default Start Flow"
+      },
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1701338473,
+    "nanos": 701096000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  }
+}
